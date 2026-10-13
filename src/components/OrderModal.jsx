@@ -141,7 +141,7 @@ export default function OrderModal({ isOpen, onClose, initialProduct = null }) {
                       className={`flex items-center justify-between p-3 rounded-xl border text-left text-xs transition-all ${
                         isSelected
                           ? 'border-brushstroke-600 bg-red-50/50 font-bold text-royal-950 shadow-xs ring-1 ring-brushstroke-600'
-                          : 'border-wheat-300 hover:border-royal-300 bg-white text-stone-700'
+                          : 'border-blue-200 hover:border-royal-400 bg-white text-royal-950 shadow-2xs hover:bg-blue-50/60'
                       }`}
                     >
                       <span className="truncate pr-2">{prod.name}</span>
@@ -164,10 +164,10 @@ export default function OrderModal({ isOpen, onClose, initialProduct = null }) {
                       type="button"
                       key={size}
                       onClick={() => setSelectedPackSize(size)}
-                      className={`px-3.5 py-2 rounded-xl text-xs font-semibold border transition-all ${
+                      className={`px-4 py-2 rounded-xl text-xs font-bold border transition-all ${
                         selectedPackSize === size
-                          ? 'bg-royal-950 text-white border-royal-950 shadow-xs'
-                          : 'bg-ivory-100 text-stone-700 border-wheat-300 hover:border-royal-400'
+                          ? 'bg-royal-600 text-white border-royal-600 shadow-md ring-2 ring-royal-600/30'
+                          : 'bg-white text-royal-950 border-blue-200 hover:border-royal-400 hover:bg-blue-50/70 shadow-2xs'
                       }`}
                     >
                       {size}
@@ -185,7 +185,7 @@ export default function OrderModal({ isOpen, onClose, initialProduct = null }) {
                   <button
                     type="button"
                     onClick={() => setQuantity((q) => Math.max(1, q - 1))}
-                    className="w-10 h-10 rounded-xl bg-ivory-100 border border-wheat-300 flex items-center justify-center text-royal-950 hover:bg-royal-100 hover:border-royal-400 transition-colors"
+                    className="w-10 h-10 rounded-xl bg-white border border-blue-200 flex items-center justify-center text-royal-950 hover:bg-blue-50 hover:border-royal-400 transition-colors shadow-2xs"
                   >
                     <Minus className="w-4 h-4" />
                   </button>
@@ -195,7 +195,7 @@ export default function OrderModal({ isOpen, onClose, initialProduct = null }) {
                   <button
                     type="button"
                     onClick={() => setQuantity((q) => q + 1)}
-                    className="w-10 h-10 rounded-xl bg-ivory-100 border border-wheat-300 flex items-center justify-center text-royal-950 hover:bg-royal-100 hover:border-royal-400 transition-colors"
+                    className="w-10 h-10 rounded-xl bg-white border border-blue-200 flex items-center justify-center text-royal-950 hover:bg-blue-50 hover:border-royal-400 transition-colors shadow-2xs"
                   >
                     <Plus className="w-4 h-4" />
                   </button>
@@ -205,7 +205,7 @@ export default function OrderModal({ isOpen, onClose, initialProduct = null }) {
             </div>
 
             {/* 3. Delivery Details */}
-            <div className="pt-2 border-t border-wheat-200">
+            <div className="pt-2 border-t border-blue-100">
               <label className="block text-xs font-bold uppercase tracking-wider text-royal-950 mb-2">
                 3. Customer / Delivery Info (Optional)
               </label>
@@ -216,7 +216,7 @@ export default function OrderModal({ isOpen, onClose, initialProduct = null }) {
                     value={customerName}
                     onChange={(e) => setCustomerName(e.target.value)}
                     placeholder="Your Full Name"
-                    className="w-full px-3.5 py-2.5 rounded-xl border border-wheat-300 text-xs text-stone-800 placeholder-stone-400 focus:outline-none focus:border-royal-600 focus:ring-1 focus:ring-royal-600 transition-colors"
+                    className="w-full px-3.5 py-2.5 rounded-xl border border-blue-200 bg-white text-xs text-royal-950 placeholder-stone-400 focus:outline-none focus:border-royal-600 focus:ring-1 focus:ring-royal-600 transition-colors shadow-2xs"
                   />
                 </div>
                 <div>
@@ -225,7 +225,7 @@ export default function OrderModal({ isOpen, onClose, initialProduct = null }) {
                     value={customerPhone}
                     onChange={(e) => setCustomerPhone(e.target.value)}
                     placeholder="Mobile / Contact No."
-                    className="w-full px-3.5 py-2.5 rounded-xl border border-wheat-300 text-xs text-stone-800 placeholder-stone-400 focus:outline-none focus:border-royal-600 focus:ring-1 focus:ring-royal-600 transition-colors"
+                    className="w-full px-3.5 py-2.5 rounded-xl border border-blue-200 bg-white text-xs text-royal-950 placeholder-stone-400 focus:outline-none focus:border-royal-600 focus:ring-1 focus:ring-royal-600 transition-colors shadow-2xs"
                   />
                 </div>
               </div>
@@ -235,7 +235,7 @@ export default function OrderModal({ isOpen, onClose, initialProduct = null }) {
                   value={customerCity}
                   onChange={(e) => setCustomerCity(e.target.value)}
                   placeholder="Delivery City / Address / Area"
-                  className="w-full px-3.5 py-2.5 rounded-xl border border-wheat-300 text-xs text-stone-800 placeholder-stone-400 focus:outline-none focus:border-royal-600 focus:ring-1 focus:ring-royal-600 transition-colors"
+                  className="w-full px-3.5 py-2.5 rounded-xl border border-blue-200 bg-white text-xs text-royal-950 placeholder-stone-400 focus:outline-none focus:border-royal-600 focus:ring-1 focus:ring-royal-600 transition-colors shadow-2xs"
                 />
               </div>
             </div>
