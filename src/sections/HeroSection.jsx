@@ -46,7 +46,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative pt-28 pb-16 lg:pt-36 lg:pb-28 overflow-hidden bg-ivory-100">
+    <section className="relative pt-28 pb-16 lg:pt-36 lg:pb-28 overflow-hidden bg-gradient-to-b from-[#FDFBF7] via-[#FAF7F0] to-[#F5EFE4]">
       {/* Decorative ambient background glows */}
       <motion.div
         animate={{
@@ -54,15 +54,15 @@ export default function HeroSection() {
           opacity: [0.4, 0.6, 0.4],
         }}
         transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-        className="absolute top-10 left-10 w-96 h-96 bg-wheat-200/50 rounded-full blur-3xl pointer-events-none"
+        className="absolute top-10 left-10 w-96 h-96 bg-[#EEDBB8]/50 rounded-full blur-3xl pointer-events-none"
       />
       <motion.div
         animate={{
           scale: [1.1, 1, 1.1],
-          opacity: [0.1, 0.2, 0.1],
+          opacity: [0.15, 0.25, 0.15],
         }}
         transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }}
-        className="absolute top-1/3 right-10 w-[30rem] h-[30rem] bg-gold-400/15 rounded-full blur-3xl pointer-events-none"
+        className="absolute top-1/3 right-10 w-[30rem] h-[30rem] bg-blue-200/30 rounded-full blur-3xl pointer-events-none"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
