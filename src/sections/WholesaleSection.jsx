@@ -258,7 +258,7 @@ export default function WholesaleSection({ prefilledProduct }) {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="+91 98765 43210"
+                        placeholder="+91 95979 12663"
                         className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-blue-200 text-royal-950 placeholder-stone-400 text-xs focus:outline-none focus:border-royal-500 focus:ring-2 focus:ring-blue-100 shadow-sm transition-all"
                       />
                       {errors.phone && (

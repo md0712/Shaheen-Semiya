@@ -228,7 +228,7 @@ export default function Contact() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="+91 98765 43210"
+                      placeholder="+91 95979 12663"
                       className="w-full px-3.5 py-2.5 rounded-xl bg-ivory-100 border border-wheat-300 text-xs text-forest-950 placeholder-stone-400 focus:outline-none focus:border-gold-500 transition-colors"
                     />
                     {errors.phone && (

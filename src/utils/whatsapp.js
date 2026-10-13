@@ -1,7 +1,7 @@
 /**
  * Generates official WhatsApp click-to-chat URL with encoded enquiry message
  */
-export const createWhatsAppUrl = (message, phoneNumber = '919876543210') => {
+export const createWhatsAppUrl = (message, phoneNumber = '919597912663') => {
   const cleanPhone = phoneNumber.replace(/[^0-9]/g, '');
   const encodedText = encodeURIComponent(message.trim());
   return `https://wa.me/${cleanPhone}?text=${encodedText}`;

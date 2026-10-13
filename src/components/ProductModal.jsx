@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import Button from './Button';
 import { useOrder } from '../context/OrderContext';
+import { contactDetails } from '../data/navigation';
 import { createWhatsAppUrl, getProductEnquiryMessage } from '../utils/whatsapp';
 
 export default function ProductModal({ product, onClose, onEnquiry }) {
@@ -48,7 +49,7 @@ export default function ProductModal({ product, onClose, onEnquiry }) {
 
   const handleWhatsApp = () => {
     const msg = getProductEnquiryMessage(product.name, product.packSizes?.[0]);
-    window.open(createWhatsAppUrl(msg), '_blank', 'noopener,noreferrer');
+    window.open(createWhatsAppUrl(msg, contactDetails.whatsapp), '_blank', 'noopener,noreferrer');
   };
 
   return (

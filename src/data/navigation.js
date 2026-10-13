@@ -9,9 +9,9 @@ export const navLinks = [
 ]
 
 export const contactDetails = {
-  phone: '+91 (0) 484 290 8700', // editable placeholder
-  whatsapp: '+919876543210',
-  whatsappDisplay: '+91 98765 43210',
+  phone: '+91 95979 12663',
+  whatsapp: '+919597912663',
+  whatsappDisplay: '+91 95979 12663',
   email: 'contact@shaheensemiya.com',
   address: 'Shaheen Food Products, Industrial Development Area, Kerala, India',
   workingHours: 'Monday – Saturday: 9:00 AM – 6:30 PM IST',
