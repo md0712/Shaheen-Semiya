@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <!-- Shadow for elevation -->
+    <filter id="badgeShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- White oval background badge -->
+  <ellipse cx="200" cy="120" rx="180" ry="95" fill="#FFFFFF" filter="url(#badgeShadow)"/>
+
+  <!-- Outer Crimson Red Contour Ring -->
+  <ellipse cx="200" cy="120" rx="176" ry="92" fill="none" stroke="#C92127" stroke-width="3"/>
+
+  <!-- Inner Navy Blue Contour Ring -->
+  <ellipse cx="200" cy="120" rx="170" ry="87" fill="none" stroke="#1B3B8B" stroke-width="1.8"/>
+
+  <!-- Registered Trademark (R) Symbol -->
+  <g transform="translate(325, 55)">
+    <circle cx="10" cy="10" r="9" fill="none" stroke="#222222" stroke-width="1.5"/>
+    <text x="10" y="13.5" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="11" font-weight="bold" fill="#222222" text-anchor="middle">R</text>
+  </g>
+
+  <!-- Top Center: Shaheen Bird (Falcon / Eagle in flight) -->
+  <g transform="translate(165, 42)">
+    <!-- Falcon Body and Wings -->
+    <path d="M35,22 C33,18 31,14 28,10 C24,6 18,3 10,2 C6,2 2,3 -2,5 C-4,6 -5,8 -2,9 C2,10 8,11 14,13 C8,13 2,15 -3,17 C-5,18 -3,20 1,20 C8,21 16,21 24,22 C18,24 10,27 4,31 C2,32 3,34 6,34 C12,33 20,31 28,28 C29,32 32,36 35,40 C38,36 41,32 42,28 C50,31 58,33 64,34 C67,34 68,32 66,31 C60,27 52,24 46,22 C54,21 62,21 69,20 C73,20 75,18 73,17 C68,15 62,13 56,13 C62,11 68,10 72,9 C75,8 74,6 72,5 C68,3 62,2 58,2 C50,3 44,6 40,10 C37,14 36,18 35,22 Z" fill="#993826"/>
+    <!-- Head and Beak facing right -->
+    <path d="M35,16 C34,13 36,10 38,9 C40,8 42,9 43,11 C44,11 46,12 47,12 C48,13 46,14 44,14 C43,16 41,17 38,18 Z" fill="#7A2818"/>
+    <!-- Tail Feathers -->
+    <path d="M35,36 L31,48 L35,47 L39,48 Z" fill="#882E1E"/>
+  </g>
+
+  <!-- Main Wordmark: 'Shaheen' in stylized signature blue script -->
+  <g transform="translate(200, 142)">
+    <text x="0" y="0" text-anchor="middle" font-family="'Brush Script MT', 'Dancing Script', 'Playfair Display', cursive, serif" font-size="76" font-style="italic" font-weight="bold" fill="#1B3B8B" letter-spacing="-1">
+      Shahee<tspan font-style="normal" font-weight="900" font-family="sans-serif">N</tspan>
+    </text>
+  </g>
+
+  <!-- Subtitle: 'TASTE SEMIYA' -->
+  <g transform="translate(200, 172)">
+    <text x="0" y="0" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="16" font-weight="800" fill="#C92127" letter-spacing="4">
+      TASTE SEMIYA
+    </text>
+  </g>
+</svg>
