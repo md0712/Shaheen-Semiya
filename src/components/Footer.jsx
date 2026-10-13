@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MessageCircle, Mail, Phone, MapPin, ArrowUp, Instagram, Facebook, Youtube, Linkedin, ShieldCheck, Heart } from 'lucide-react';
+import { MessageCircle, Mail, Phone, MapPin, ArrowUp, Instagram, Facebook, Youtube, Linkedin, ShieldCheck, Heart, ExternalLink } from 'lucide-react';
 import { navLinks, contactDetails, socialLinks } from '../data/navigation';
 import { productsData } from '../data/products';
 import { createWhatsAppUrl, getGeneralEnquiryMessage } from '../utils/whatsapp';
@@ -38,13 +38,13 @@ export default function Footer() {
 
             {/* Quality & Trust Badges */}
             <div className="flex flex-wrap items-center gap-3 pt-1 text-xs text-stone-700">
-              <div className="flex items-center gap-1.5 bg-ivory-100/90 px-3 py-1.5 rounded-full border border-wheat-300/80 shadow-xs">
-                <ShieldCheck className="w-4 h-4 text-gold-600" />
-                <span className="font-medium text-forest-950">100% Quality Inspected Wheat</span>
+              <div className="flex items-center gap-1.5 bg-blue-50 px-3 py-1.5 rounded-full border border-blue-200 shadow-xs">
+                <ShieldCheck className="w-4 h-4 text-royal-600" />
+                <span className="font-medium text-royal-950">100% Quality Inspected Wheat</span>
               </div>
-              <div className="flex items-center gap-1.5 bg-ivory-100/90 px-3 py-1.5 rounded-full border border-wheat-300/80 shadow-xs">
-                <span className="w-2 h-2 rounded-full bg-gold-500" />
-                <span className="font-medium text-forest-950">Modern Italian Extrusion</span>
+              <div className="flex items-center gap-1.5 bg-blue-50 px-3 py-1.5 rounded-full border border-blue-200 shadow-xs">
+                <span className="w-2 h-2 rounded-full bg-brushstroke-600" />
+                <span className="font-medium text-royal-950">Modern Italian Extrusion</span>
               </div>
             </div>
 
@@ -64,8 +64,8 @@ export default function Footer() {
 
           {/* Quick Links (Col 3) */}
           <div>
-            <h4 className="font-serif text-base font-bold text-forest-950 uppercase tracking-wider mb-4 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-gold-500" />
+            <h4 className="font-serif text-base font-bold text-royal-950 uppercase tracking-wider mb-4 flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-royal-600" />
               Quick Links
             </h4>
             <ul className="space-y-2.5 text-sm text-stone-600">
@@ -73,9 +73,9 @@ export default function Footer() {
                 <li key={item.path}>
                   <Link
                     to={item.path}
-                    className="hover:text-forest-950 hover:translate-x-0.5 transition-all inline-flex items-center gap-1.5 group font-medium"
+                    className="hover:text-royal-700 hover:translate-x-0.5 transition-all inline-flex items-center gap-1.5 group font-medium"
                   >
-                    <span className="text-gold-500 opacity-0 group-hover:opacity-100 transition-opacity">›</span>
+                    <span className="text-royal-500 opacity-0 group-hover:opacity-100 transition-opacity">›</span>
                     <span>{item.name}</span>
                   </Link>
                 </li>
@@ -85,8 +85,8 @@ export default function Footer() {
 
           {/* Product Categories (Col 4) */}
           <div>
-            <h4 className="font-serif text-base font-bold text-forest-950 uppercase tracking-wider mb-4 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-gold-500" />
+            <h4 className="font-serif text-base font-bold text-royal-950 uppercase tracking-wider mb-4 flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-royal-600" />
               Our Products
             </h4>
             <ul className="space-y-2.5 text-sm text-stone-600">
@@ -94,9 +94,9 @@ export default function Footer() {
                 <li key={prod.id}>
                   <Link
                     to="/products"
-                    className="hover:text-forest-950 hover:translate-x-0.5 transition-all inline-flex items-center gap-1.5 group font-medium"
+                    className="hover:text-royal-700 hover:translate-x-0.5 transition-all inline-flex items-center gap-1.5 group font-medium"
                   >
-                    <span className="text-gold-500 opacity-0 group-hover:opacity-100 transition-opacity">›</span>
+                    <span className="text-royal-500 opacity-0 group-hover:opacity-100 transition-opacity">›</span>
                     <span>{prod.name}</span>
                   </Link>
                 </li>
@@ -106,21 +106,21 @@ export default function Footer() {
 
           {/* Contact Details (Col 5) */}
           <div>
-            <h4 className="font-serif text-base font-bold text-forest-950 uppercase tracking-wider mb-4 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-gold-500" />
+            <h4 className="font-serif text-base font-bold text-royal-950 uppercase tracking-wider mb-4 flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-royal-600" />
               Head Office
             </h4>
             <ul className="space-y-3 text-xs sm:text-sm text-stone-600">
               <li className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-gold-600 shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-royal-600 shrink-0 mt-0.5" />
                 <span className="leading-snug">{contactDetails.address}</span>
               </li>
               <li className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-gold-600 shrink-0" />
+                <Phone className="w-4 h-4 text-royal-600 shrink-0" />
                 <span className="font-medium text-stone-800">{contactDetails.phone}</span>
               </li>
               <li className="flex items-center gap-2.5">
-                <Mail className="w-4 h-4 text-gold-600 shrink-0" />
+                <Mail className="w-4 h-4 text-royal-600 shrink-0" />
                 <span>{contactDetails.email}</span>
               </li>
               <li className="pt-2 text-[11px] text-stone-500">
@@ -134,7 +134,7 @@ export default function Footer() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-full bg-ivory-100 border border-wheat-200 flex items-center justify-center text-forest-900 hover:bg-forest-900 hover:text-white hover:border-forest-900 transition-all shadow-xs"
+                className="w-9 h-9 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center text-royal-800 hover:bg-royal-700 hover:text-white hover:border-royal-700 transition-all shadow-xs"
                 aria-label="Instagram"
               >
                 <Instagram className="w-4 h-4" />
@@ -143,7 +143,7 @@ export default function Footer() {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-full bg-ivory-100 border border-wheat-200 flex items-center justify-center text-forest-900 hover:bg-forest-900 hover:text-white hover:border-forest-900 transition-all shadow-xs"
+                className="w-9 h-9 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center text-royal-800 hover:bg-royal-700 hover:text-white hover:border-royal-700 transition-all shadow-xs"
                 aria-label="Facebook"
               >
                 <Facebook className="w-4 h-4" />
@@ -152,7 +152,7 @@ export default function Footer() {
                 href="https://youtube.com"
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-full bg-ivory-100 border border-wheat-200 flex items-center justify-center text-forest-900 hover:bg-forest-900 hover:text-white hover:border-forest-900 transition-all shadow-xs"
+                className="w-9 h-9 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center text-royal-800 hover:bg-royal-700 hover:text-white hover:border-royal-700 transition-all shadow-xs"
                 aria-label="YouTube"
               >
                 <Youtube className="w-4 h-4" />
@@ -161,7 +161,7 @@ export default function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-full bg-ivory-100 border border-wheat-200 flex items-center justify-center text-forest-900 hover:bg-forest-900 hover:text-white hover:border-forest-900 transition-all shadow-xs"
+                className="w-9 h-9 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center text-royal-800 hover:bg-royal-700 hover:text-white hover:border-royal-700 transition-all shadow-xs"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-4 h-4" />
@@ -170,15 +170,31 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom bar: Legal & Scroll-to-top */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
-          <p>© {new Date().getFullYear()} SHAHEEN SEMIYA. All rights reserved. Food products and branding are registered trade properties. (Placeholder business details)</p>
+        {/* Bottom bar: Legal, DM Digital Labs Attribution & Scroll-to-top */}
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-stone-500">
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
+            <p>© {new Date().getFullYear()} SHAHEEN SEMIYA. All rights reserved.</p>
+            <span className="hidden sm:inline text-stone-300">•</span>
+            <p className="flex items-center gap-1.5 font-medium text-stone-600">
+              <span>Created by</span>
+              <a
+                href="https://dmdigitallab.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-royal-700 hover:text-brushstroke-600 underline underline-offset-2 transition-colors inline-flex items-center gap-1 group"
+              >
+                <span>DM Digital Labs</span>
+                <ExternalLink className="w-3 h-3 text-royal-600 group-hover:text-brushstroke-600 transition-colors" />
+              </a>
+            </p>
+          </div>
+
           <div className="flex items-center gap-6">
-            <Link to="/contact" className="hover:text-forest-950 transition-colors">Privacy Policy</Link>
-            <Link to="/wholesale-retail" className="hover:text-forest-950 transition-colors">Trade Terms</Link>
+            <Link to="/contact" className="hover:text-royal-950 transition-colors">Privacy Policy</Link>
+            <Link to="/wholesale-retail" className="hover:text-royal-950 transition-colors">Trade Terms</Link>
             <button
               onClick={scrollToTop}
-              className="p-2 rounded-full bg-ivory-100 border border-wheat-300 text-forest-950 hover:bg-forest-950 hover:text-white transition-all flex items-center gap-1 shadow-xs"
+              className="p-2 rounded-full bg-blue-50 border border-blue-200 text-royal-900 hover:bg-royal-700 hover:text-white transition-all flex items-center gap-1 shadow-xs"
               title="Back to top"
             >
               <ArrowUp className="w-4 h-4" />
