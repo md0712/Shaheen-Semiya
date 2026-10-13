@@ -4,7 +4,17 @@
 export const createWhatsAppUrl = (message, phoneNumber = '919597912663') => {
   const cleanPhone = phoneNumber.replace(/[^0-9]/g, '');
   const encodedText = encodeURIComponent(message.trim());
-  return `https://wa.me/${cleanPhone}?text=${encodedText}`;
+
+  // Detect mobile device
+  const isMobile = typeof navigator !== 'undefined' && 
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    return `https://wa.me/${cleanPhone}?text=${encodedText}`;
+  }
+
+  // Laptop and desktop: route directly to WhatsApp Web
+  return `https://web.whatsapp.com/send?phone=${cleanPhone}&text=${encodedText}`;
 };
 
 export const getGeneralEnquiryMessage = () => {
