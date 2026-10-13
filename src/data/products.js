@@ -6,6 +6,11 @@ export const productsData = [
     shortDescription: 'Uniformly drawn wheat vermicelli crafted for daily home cooking, sweet desserts, and savory breakfast staples.',
     longDescription: 'Crafted with premium selected hard wheat semolina, Shaheen Regular Vermicelli offers consistent cooking texture and non-sticky strands. Ideal for roasting to your personal preference for payasam or boiling directly for wholesome savory preparations.',
     image: '/images/products/regular_vermicelli.jpg',
+    gallery: [
+      { id: 'front', label: 'Front Pack', type: 'Front View', src: '/images/products/regular_vermicelli.jpg' },
+      { id: 'back', label: 'Back & Nutrition', type: 'Back Panel', src: '/images/products/product_pack_back.jpg' },
+      { id: 'barcode', label: 'Barcode & Details', type: 'Barcode & FSSAI', src: '/images/products/product_barcode_details.jpg' },
+    ],
     packSizes: ['200g', '500g', '1kg'],
     bestFor: 'Semiya Payasam, Upma, Kheer, Sweet Pulao',
     ingredients: '100% Selected Wheat Semolina (Suji)',
@@ -25,6 +30,11 @@ export const productsData = [
     shortDescription: 'Evenly roasted golden-brown strands ready for immediate cooking, saving prep time with aromatic depth.',
     longDescription: 'Pre-roasted using slow, uniform thermal roasting technology to deliver rich nutty aroma and crisp texture right out of the packet. Saves precious culinary preparation time while delivering foolproof festive payasams and morning savory dishes.',
     image: '/images/products/roasted_semiya.jpg',
+    gallery: [
+      { id: 'front', label: 'Front Pack', type: 'Front View', src: '/images/products/roasted_semiya.jpg' },
+      { id: 'back', label: 'Back & Nutrition', type: 'Back Panel', src: '/images/products/product_pack_back.jpg' },
+      { id: 'barcode', label: 'Barcode & Details', type: 'Barcode & FSSAI', src: '/images/products/product_barcode_details.jpg' },
+    ],
     packSizes: ['200g', '400g', '850g'],
     bestFor: 'Instant Semiya Payasam, Vegetable Upma, Biryani',
     ingredients: '100% Roasted Wheat Semolina (Suji)',
@@ -44,6 +54,11 @@ export const productsData = [
     shortDescription: 'Classic long-cut unbroken strands favored for traditional Eid celebrations, Sheer Khurma, and festive banquets.',
     longDescription: 'Preserving the heritage of royal vermicelli desserts, Shaheen Long Cut Semiya features extended length strands that cook to luxurious tenderness. A staple in celebratory households for rich royal kheer, Sheer Khurma, and delicate sweet vermicelli nests.',
     image: '/images/products/long_cut_semiya.jpg',
+    gallery: [
+      { id: 'front', label: 'Front Pack', type: 'Front View', src: '/images/products/long_cut_semiya.jpg' },
+      { id: 'back', label: 'Back & Nutrition', type: 'Back Panel', src: '/images/products/product_pack_back.jpg' },
+      { id: 'barcode', label: 'Barcode & Details', type: 'Barcode & FSSAI', src: '/images/products/product_barcode_details.jpg' },
+    ],
     packSizes: ['250g', '500g'],
     bestFor: 'Traditional Sheer Khurma, Royal Kheer, Vermicelli Nests',
     ingredients: '100% Durum Wheat Semolina',
@@ -63,6 +78,11 @@ export const productsData = [
     shortDescription: 'Delicately extruded fine vermicelli that cooks swiftly into an ultra-smooth, melt-in-mouth culinary experience.',
     longDescription: 'Extruded through precision micro-dies to produce feather-light, fine strands that soften rapidly in hot milk or aromatic broths. Perfect for discerning palates who prefer delicate texture in puddings, delicate soups, and sweet evening treats.',
     image: '/images/products/thin_semiya.jpg',
+    gallery: [
+      { id: 'front', label: 'Front Pack', type: 'Front View', src: '/images/products/thin_semiya.jpg' },
+      { id: 'back', label: 'Back & Nutrition', type: 'Back Panel', src: '/images/products/product_pack_back.jpg' },
+      { id: 'barcode', label: 'Barcode & Details', type: 'Barcode & FSSAI', src: '/images/products/product_barcode_details.jpg' },
+    ],
     packSizes: ['150g', '350g', '700g'],
     bestFor: 'Fine Seviyan Kheer, Delicate Sweet Broth, Evening Snacks',
     ingredients: '100% Selected Fine Wheat Semolina',
@@ -82,6 +102,11 @@ export const productsData = [
     shortDescription: 'Our flagship reserve vermicelli produced from prime-grade wheat selections for special occasions.',
     longDescription: 'Shaheen Special Semiya represents our master craftsmen’s benchmark in vermicelli production. Sourced from choice high-protein wheat harvests and processed through slow cold-extrusion dies, this reserve batch guarantees exceptional structural integrity and rich culinary flavor.',
     image: '/images/products/special_semiya.jpg',
+    gallery: [
+      { id: 'front', label: 'Front Pack', type: 'Front View', src: '/images/products/special_semiya.jpg' },
+      { id: 'back', label: 'Back & Nutrition', type: 'Back Panel', src: '/images/products/product_pack_back.jpg' },
+      { id: 'barcode', label: 'Barcode & Details', type: 'Barcode & FSSAI', src: '/images/products/product_barcode_details.jpg' },
+    ],
     packSizes: ['500g Reserve Box', '1kg Chef Pack'],
     bestFor: 'Special Event Catering, Royal Biryanis, Signature Payasams',
     ingredients: '100% Choice Hard Amber Wheat',
@@ -94,4 +119,4 @@ export const productsData = [
       'Master chef preferred formulation'
     ]
   }
-]
+];
